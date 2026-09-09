@@ -16,7 +16,13 @@ Instructions: Write a function which counts the number of times a value occurs i
 Example: countItem(['a', 'b', 'a'], 'a') should return 2
 ===================== */
 
-let countItem = (arr, item) => {};
+let countItem = (arr, item) => {
+  let count=0;
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] == item) count++;
+  }
+  return count;
+};
 
 console.log('countItem success:', countItem([1, 2, 3, 4, 5, 4, 4], 4) === 3);
 
@@ -27,8 +33,19 @@ Instructions: Write a function which takes an array and returns a new array with
   original array.
 ===================== */
 
-let isEven = (n) => {};
-let filterEven = (arr) => {};
+let isEven = (numba) => {
+    return numba % 2 == 0;
+};
+
+let filterEven = (arr) => {
+    let arra = []; 
+    for (let i = 0; i < arr.length; i++){
+      if (isEven(arr[i])){
+        arra.push(arr[i]);
+      }
+    }
+    return arra;
+};
 
 console.log('filterEven success:', _(filterEven([1, 2, 3, 4, 5, 4, 4])).isEqual([2, 4, 4, 4]));
 
