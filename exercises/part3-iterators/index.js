@@ -18,8 +18,8 @@ Example: countItem(['a', 'b', 'a'], 'a') should return 2
 
 let countItem = (arr, item) => {
   let count=0;
-  for (let i = 0; i < arr.length; i++) {
-    if (arr[i] == item) count++;
+  for (const currentItem of arr) {
+    if (currentItem == item) count++;
   }
   return count;
 };
