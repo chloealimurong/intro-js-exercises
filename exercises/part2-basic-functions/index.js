@@ -111,7 +111,7 @@ Example: "indexForValue(['Mercury', 'Venus', 'Earth', 'Mars'], 'Earth') should r
 
 let indexForValue = (array, value) => {
     for (let i = 0; i < array.length; i++){
-        if (array[i]==value) return i;
+        if (array[i]===value) return i;
     }
 };
 
@@ -124,7 +124,7 @@ Example: "keyForValue({name: 'Nathan', age: 27}, 'Nathan') should return 'name'"
 
 let keyForValue = (dict, nombre) => {
     for (let key in dict) {
-        if (dict[key]==nombre) return key;
+        if (dict[key]===nombre) return key;
     }
 };
 
