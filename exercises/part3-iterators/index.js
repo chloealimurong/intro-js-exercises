@@ -41,7 +41,7 @@ let filterEven = (arr) => {
     const arra = []; 
     for (const item of arr){
       if (isEven(item)){
-        arra.push([item]);
+        arra.push(item);
       }
     }
     return arra;
@@ -61,7 +61,7 @@ let isOdd = (numero) => {
 
 let filterOdd = (arr) => {
   const ar = [];
-  for (const i of ar){
+  for (const i of arr){
     if (isOdd(i)){
       ar.push(i);
     }
@@ -84,7 +84,7 @@ let plusOne = (num) => {
 
 let mapIncrement = (arr) => {
   const a = [];
-  for (const i of a){
+  for (const i of arr){
     a.push(plusOne(i));
   }
   return a;
@@ -104,7 +104,7 @@ let timesThree = (number) => {
 };
 let mapTriple = (arr) => {
   const a = [];
-  for (const i of a){
+  for (const i of arr){
     a.push(timesThree(i));
   }
   return a;
