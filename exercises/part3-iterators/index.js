@@ -60,10 +60,10 @@ let isOdd = (numero) => {
 };
 
 let filterOdd = (arr) => {
-  let ar = [];
-  for (let i = 0;i<arr.length;i++){
-    if (isOdd(arr[i])){
-      ar.push(arr[i]);
+  const ar = [];
+  for (const i of ar){
+    if (isOdd(i)){
+      ar.push(i);
     }
   }
   return ar;
@@ -83,9 +83,9 @@ let plusOne = (num) => {
 };
 
 let mapIncrement = (arr) => {
-  let a = [];
-  for (let i = 0; i<arr.length;i++){
-    a.push(plusOne(arr[i]));
+  const a = [];
+  for (const i of a){
+    a.push(plusOne(i));
   }
   return a;
 };
@@ -103,9 +103,9 @@ let timesThree = (number) => {
     return number * 3;
 };
 let mapTriple = (arr) => {
-  let a = [];
-  for (let i=0; i<arr.length; i++){
-    a.push(timesThree(arr[i]));
+  const a = [];
+  for (const i of a){
+    a.push(timesThree(i));
   }
   return a;
 };
