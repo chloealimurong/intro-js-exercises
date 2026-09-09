@@ -123,7 +123,7 @@ Example: "keyForValue({name: 'Nathan', age: 27}, 'Nathan') should return 'name'"
 ===================== */
 
 let keyForValue = (dict, nombre) => {
-    for (let key in dict) {
+    for (const key in dict) {
         if (dict[key]===nombre) return key;
     }
 };
