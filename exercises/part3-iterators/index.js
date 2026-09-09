@@ -38,10 +38,10 @@ let isEven = (numba) => {
 };
 
 let filterEven = (arr) => {
-    let arra = []; 
-    for (let i = 0; i < arr.length; i++){
-      if (isEven(arr[i])){
-        arra.push(arr[i]);
+    const arra = []; 
+    for (const item of arr){
+      if (isEven(item)){
+        arra.push([item]);
       }
     }
     return arra;
