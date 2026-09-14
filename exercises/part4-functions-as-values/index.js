@@ -19,15 +19,12 @@ Instructions: Write a function which takes an array and returns a new array,
 
 let filter = (arr, pred) => {
   const arra = [];
-  let pred = false;
   for (const item of arr){
-    if (isEven(item)){
+    if (pred(item)){
       arra.push(item);
-    } else if (isOdd(item))[
-      arra.push(item);
-    ]
+    }
   }
-  return arra
+  return arra;
 };
 
 console.log('filter success #1:', _(filter([1, 2, 3, 4, 5, 4, 4], isEven)).isEqual([2, 4, 4, 4]));
