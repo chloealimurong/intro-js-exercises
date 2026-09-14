@@ -68,7 +68,13 @@ Instructions: Write a function which takes an array and returns the value of
 
 ===================== */
 
-let reduce = (arr, func, initial) => {};
+let reduce = (arr, func, initial) => {
+  let final = initial;
+  for (let item of arr){
+    final = func(final, item)
+  }
+  return final
+};
 
 console.log('reduce success #1:', reduce([1, 2, 3, 4, 5, 4, 4], add, 0) === 23);
 console.log('reduce success #2:', reduce([1, 2, 3, 4, 5, 4, 4], multiply, 1) === 1920);
